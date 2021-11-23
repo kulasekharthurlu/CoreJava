@@ -5,9 +5,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.spi.LoggerFactory;
+ 
 public class JdbcDelete {
 
 	 public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		   Logger log=Logger.getLogger(JdbcDelete.class.getName());
 		 Connection con=null;
 		try {
 			 Class.forName("org.postgresql.Driver");
@@ -20,7 +24,7 @@ public class JdbcDelete {
 		 finally {
 			if(con!=null) {
 				con.close();
-				System.out.println("connection closed successfully....");
+				 log.info("connection closed successfully....");
 			}else {
 				System.out.println("connection not established...");
 			}
