@@ -2,21 +2,19 @@ package com.app.numbers;
 
 public class PrimeNumber {
     //prime number is a number which is divisible by 1 and itself only
-    public static void main(String[] args) {
-        int num = 5;
-        int count = 0;
-        for (int i = 1; i <= num; i++) {
-            if (num % i == 0) {
-                count++;
-            }
-        }
-        if (count == 2) {
-            System.out.println("Number is prime");
-        } else {
-            System.out.println("Number is not prime");
-        }
-    	
-        
+    public static void main(String[] args) { 
+    	int num=50;
+    	boolean result=true;
+    	for(int i=2;i<50/2;i++) {
+    		 
+    		if(num%i==0)
+    			result=false;
+    		break;
+    	}
+    	if(result)
+    		System.out.println("this is  primenumber...");
+    	else
+    		System.out.println("this is not prim number");
     }
 
 }

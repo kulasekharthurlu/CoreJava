@@ -9,8 +9,12 @@ public class PalinromeString {
         for (int i = ch.length - 1; i >= 0; i--) {
             sb.append(ch[i]);
         }
-        String rev = sb.toString();
-        if (str.equals(rev)) {
+        System.out.println(sb);
+       // String rev = sb.toString();
+       
+     
+        String st=new String(sb);
+        if (str.equals(st)) {
             System.out.println("String is palindrome");
         } else {
             System.out.println("String is not palindrome");
