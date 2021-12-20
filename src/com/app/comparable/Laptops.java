@@ -5,7 +5,7 @@ public class Laptops implements Comparable<Laptops>{
 	private String brand;
 	private int ram;
 	private int price;
-	public Laptops(String brand, int ram, int price) {
+	public Laptops(String brand, int ram, int price) {   
 		super();
 		this.brand = brand;
 		this.ram = ram;
