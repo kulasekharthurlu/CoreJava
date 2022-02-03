@@ -1,7 +1,5 @@
 package com.app;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class TestClass {
@@ -14,12 +12,16 @@ public class TestClass {
 		 list.add(c1);
 		 list.add(c);
          list.add(c2);
-         System.out.println(list);//toString method override compelsary
-         Collections.sort(list, (e1,e2)->e1.getAge()-(e2.getAge()));
-         for(Child d:list) {
-        	 
-        	 System.out.println(d.name+" "+d.age+" "+d.rollno+" "+d.marks);
+         if(java.util.regex.Pattern.matches("[0-9]+", "799768766jhj")) {
+        	 System.out.println("name valid");
          }
+         System.out.println(c2.name);
+//         System.out.println(list);//toString method override compelsary
+//         Collections.sort(list, (e1,e2)->e1.getAge()-(e2.getAge()));
+//         for(Child d:list) {
+//        	 
+//        	 System.out.println(d.name+" "+d.age+" "+d.rollno+" "+d.marks);
+//         }
 		  
 	}
 }

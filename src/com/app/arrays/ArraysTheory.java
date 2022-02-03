@@ -1,6 +1,6 @@
 package com.app.arrays;
 
-import java.util.Arrays;
+import org.apache.log4j.Logger;
 
 public class ArraysTheory {
 /*
@@ -12,9 +12,10 @@ public class ArraysTheory {
  * 
  
  */
+public static final Logger log = Logger.getLogger(ArraysTheory.class);
 	 public static void main(String[] args) {
 		Emp e=new Emp(1,"kww","kldeq");
-		System.out.println(e);
+		log.info(e);
 		
 	}
 }

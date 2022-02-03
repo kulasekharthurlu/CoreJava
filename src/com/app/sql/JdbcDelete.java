@@ -6,10 +6,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.spi.LoggerFactory;
+ 
  
 public class JdbcDelete {
 
+	private static final Logger log = Logger.getLogger(JdbcDelete.class);
 	 public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		   Logger log=Logger.getLogger(JdbcDelete.class.getName());
 		 Connection con=null;
@@ -26,7 +27,7 @@ public class JdbcDelete {
 				con.close();
 				 log.info("connection closed successfully....");
 			}else {
-				System.out.println("connection not established...");
+				 log.info("connection not established...");
 			}
 		}
 		 

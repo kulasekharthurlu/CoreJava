@@ -1,21 +1,23 @@
 package com.app.Annonimus;
 
-public class RunnableEx {
+import org.apache.log4j.Logger;
 
+public class RunnableEx {
+   public static final Logger log = Logger.getLogger(RunnableEx.class);
 	public static void main(String[] args) {
 		 Runnable r=new Runnable() {
 			
 			@Override
 			public void run() {  
 				for(int i=0;i<=10;i++) {
-					System.out.println("childs thread.....");
+					 log.info("childs thread.....");
 				}
 			}
 		};
 		Thread  t=new Thread(r);
 		t.start();
 		for(int i=0;i<=10;i++) {
-			System.out.println("main thread.....");
+			log.info("main thread.....");
 		}
 	}
 

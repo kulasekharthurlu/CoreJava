@@ -3,8 +3,10 @@ package com.app.collections.set;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-public class TreeSetEx {
+import org.apache.log4j.Logger;
 
+public class TreeSetEx {
+  public static final Logger log = Logger.getLogger(TreeSetEx.class);
 	public static void main(String[] args) {
 		 TreeSet<Integer> t=new TreeSet<>(new Test());
 		 t.add(3);
@@ -13,7 +15,7 @@ public class TreeSetEx {
 		 t.add(11);
 		 t.add(36);	 
 		 t.add(773);
-		 System.out.println(t);
+		 log.info(t);
 	}
 
 }
@@ -27,7 +29,7 @@ class Test implements Comparator{
         	return -1;
         else if(i1<i2)
         	return +1;
-        else	
+        
 		    return 0;
 	}
 	
