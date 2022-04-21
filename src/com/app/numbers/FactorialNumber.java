@@ -2,11 +2,28 @@ package com.app.numbers;
 
 public class FactorialNumber {
 	public static void main(String[] args) {
-	int no=3,fact=1,i=1;
-	for(i=1;i<=no;i++) {
-		fact=fact*i;
+		int inputNumber = 5;
+		System.out.println("factorial of " + inputNumber + " is " + findFactorialNumber(inputNumber));
+		System.out.println("factorial of " + inputNumber + " is " + findFactorialNumberByRecursion(inputNumber));
+
 	}
-	System.out.println("factorial of "+no+" is "+fact);
-}
+
+	public static int findFactorialNumber(int inputNumber) {
+		int fact = 1, i = 0;
+		for (i = 1; i <= inputNumber; i++) {
+			fact = fact * i;
+		}
+		return fact;
+	}
+
+	public static int findFactorialNumberByRecursion(int inputNumber) {
+
+		 if(inputNumber >= 1) {
+			 return inputNumber*findFactorialNumberByRecursion(inputNumber-1);
+		 }else {
+			 return 1;
+		 }
+
+	}
 
 }

@@ -1,10 +1,12 @@
-package com.app.string;
+package com.app.collections.map;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
-public class DuplicateCharsInString {
-    public static void main(String[] args) {
+public class FindDublicatechar {
+
+	public static void main(String[] args) {
         String str = "Kulasekhar";
         char[] ch = str.toCharArray();
         Map<Character, Integer> map=new HashMap<Character, Integer>();
@@ -18,5 +20,4 @@ public class DuplicateCharsInString {
         }
         System.out.println(map);
     }
-
 }

@@ -1,44 +1,43 @@
 package com.app;
-//reference is not important but refernce type is important
-public class Test { 
+
+import java.util.Map;
+import java.util.NavigableMap;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class Test {
 	public static void main(String[] args) {
-		Impli m=new Impli();
-		m.implimentMethod();
+//
+//		int[][] arr = new int[4][4];
+//		arr[0][0]=1;
+//		arr[0][1]=2;
+//		arr[0][2]=3;
+//		arr[0][3]=12;
+//		arr[1][0]=4;
+//		arr[1][1]=5;
+//		arr[1][2]=6;
+//		arr[1][3]=16;
+//		arr[2][0]=7;
+//		arr[2][1]=8;
+//		arr[2][2]=9;
+//		arr[2][3]=19;
+//		arr[3][0]=7;
+//		arr[3][1]=8;
+//		arr[3][2]=9;
+//		arr[3][3]=15;
+//		 
+//		int sum=0;
+//		int k=arr.length-1;
+//		for(int i=0;i<arr.length;i++) {
+//			for(int j=i;j<=i;j++) {
+//				   sum=arr[i][k]+sum;
+//				System.out.println("kulsekhar");
+//				k--;
+//			}
+//		}
+//		System.out.println(sum);
+//	
+		TreeMap<String, Integer> map=new TreeMap<>();
 	}
-}
- interface Anno{
-	 void ma();
-	 int add(int a,int b);
- }
- class Impli{
-	 String implimentMethod() {
-		 Anno a=new Anno() {
-			
-			@Override
-			public void ma() {
- 				System.out.println("this is ma method");
-			}
-			
-			@Override
-			public int add(int a, int b) {
-				System.out.println("sum of two numbers: "+a+b);
- 				return a+b;
-			}
-		};
-	a.add(2434, 3543);
 	
-	a.ma();
-		return null;
-		 
-	 }
- }
- class ParentEx{
-	 Impli i=new Impli() {
-		 
-		 @Override
-		 String implimentMethod() {
-			return null;
-			 
-		 }
-	 };
- }
+}

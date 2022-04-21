@@ -9,6 +9,18 @@ public class InterfaceEx {
 		public void m1() {
 				 System.out.println("implementing class");
 			 }
+
+			@Override
+			public void m2() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void m3() {
+				// TODO Auto-generated method stub
+				
+			}
 		 };
 		 a.m1();
 
@@ -17,4 +29,6 @@ public class InterfaceEx {
 }
 interface B{
 	void m1();
+	void m2();
+	void m3();
 }

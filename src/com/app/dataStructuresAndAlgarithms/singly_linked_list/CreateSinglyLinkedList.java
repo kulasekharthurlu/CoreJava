@@ -28,19 +28,27 @@ private	ListNode head;
 		third.next=fourth;
 		fourth.next=fifth;
 		fifth.next=sixth;
-		
-		sll.create();
-		
+		sll.display(reverseList(sll.head));
 
 	}
-	public int create() {
+	
+	public static ListNode reverseList(ListNode head) {
+		if(head == null || head.next == null) {
+			return head;
+		}
+		ListNode p=reverseList(head.next);
+		head.next.next=head;
+		head.next=null;
+		return p;
+	}
+	public void display(ListNode head) {
 		ListNode current = head;
 		while(current != null) {
 			System.out.print(current.data+"-->");
 			current=current.next;
 		}
 		System.out.println("null");
- 		return 1;
+ 		return;
 	}
 	
 }

@@ -1,20 +1,27 @@
 package com.app.Java8Feautures.OptionalClass;
 
-import org.apache.log4j.Logger;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Consumer;
 
 public class OptionalEx {
-	public static final Logger log = Logger.getLogger(OptionalEx.class);
 
 	public static void main(String[] args) {
 		Customer c = new Customer(8, "kula");
-		log.info(c.name + " " + c.getId());
-
+		System.out.println(c.name + " " + c.getId());
 		Customer c1 = new Customer(8, null);
-
-		log.info(c1.name.toUpperCase() + " " + c1.getId());
-
+		Optional<String> op=Optional.ofNullable(c1.getName());
+		System.out.println(op.isPresent()?op.get().toUpperCase():"" + " " + c1.getId());
+		Consumer<String> game=new Consumer<String>() {
+			public void accept(String name) {
+				System.out.println(name);
+			}
+		};
+		List<String> list=List.of("kula","sekhar","hanuman");
+		list.forEach(game);
+		 
 	}
-
 }
 
 class Customer {

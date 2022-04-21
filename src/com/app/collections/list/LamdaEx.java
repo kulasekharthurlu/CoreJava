@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class LamdaEx {
@@ -20,6 +22,8 @@ public class LamdaEx {
 	      a.stream().forEach(System.out::println);
 	     
 	     List<Integer> l= a.stream().filter(i->i%2==0).collect(Collectors.toList());
+	     Set<Integer> set=a.stream().filter(e->e%2==0).collect(Collectors.toSet());
+	     Map<Integer, Integer> map=a.stream().filter(m->m%2==0).collect(Collectors.toMap(k->k, v->v));
 	     System.out.println();
 	        l.stream().forEach(System.out::println);
 

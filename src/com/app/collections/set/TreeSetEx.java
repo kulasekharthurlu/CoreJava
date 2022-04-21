@@ -6,16 +6,15 @@ import java.util.TreeSet;
 import org.apache.log4j.Logger;
 
 public class TreeSetEx {
-  public static final Logger log = Logger.getLogger(TreeSetEx.class);
-	public static void main(String[] args) {
-		 TreeSet<Integer> t=new TreeSet<>(new Test());
+ 	public static void main(String[] args) {
+		 TreeSet<Integer> t=new TreeSet<>();
 		 t.add(3);
 		 t.add(33);
 		 t.add(343);
 		 t.add(11);
 		 t.add(36);	 
 		 t.add(773);
-		 log.info(t);
+		 System.out.println(t);
 	}
 
 }

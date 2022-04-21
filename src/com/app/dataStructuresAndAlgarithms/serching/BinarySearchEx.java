@@ -1,4 +1,4 @@
-package com.app.dataStructuresAndAlgarithms;
+package com.app.dataStructuresAndAlgarithms.serching;
 
 public class BinarySearchEx {
 	

@@ -1,13 +1,15 @@
-package com.app;
+package com.app.hashcode;
 
-public class CheckingDefaultValues {
+
+public class CheckHashCodes {
+
 
 	public static void main(String[] args) {
 		 Animal a=new Animal(null, null);
 		 
-//		 a.setColour("White");
-//		 a.setType("Cow");
-//		 System.out.println(a.getColour()+" "+a.getType());
+		 a.setColour("White");
+		 a.setType("Cow");
+		 System.out.println(a.getColour()+" "+a.getType());
 		 a.showVarablesValue();
 	}
 

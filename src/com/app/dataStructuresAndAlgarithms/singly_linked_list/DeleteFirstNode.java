@@ -30,7 +30,8 @@ private	ListNode head;
 		fourth.next=fifth;
 		fifth.next=sixth;
 		
-		sll.deleteFistNode();
+	ListNode deletedNode=	sll.deleteFistNode();
+	System.out.println(deletedNode.data+"-->null");
 		sll.create();
 		
 
